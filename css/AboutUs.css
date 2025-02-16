@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *
 {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  /* font-family: "poppins", sans-serif; */
 }
 
 :root{
@@ -18,7 +18,7 @@ html{
   scroll-behavior: smooth;
 }
 
-h1
+/* h1
 {
   font-size: 50px;
 }
@@ -34,7 +34,7 @@ font-size: 20px;
 .call-taxi
 {
   font-size: 8px;
-}
+} */
 
 /*** Spinner End ***/
 
@@ -405,13 +405,16 @@ font-size: 20px;
   flex-direction: column;
   
 }
+.number{
+  margin-top: 50px;
+}
 .number .count{
   font-size: 70px;
   font-weight: bold;
   
 }
-.number .count_para{
-  padding: 50px 50px 0px 50px;
+.number h3,.count_para{
+  padding: 10px 50px 0px 80px;
 }
 .number .count_hline{
   font-size: 22px;
@@ -564,14 +567,18 @@ font-size: 20px;
   
   .number{
     width: 100%;
-    margin-top: -30px;
+    margin-top: 20px;
   }
   .count_para{
     width: 100%;
     text-align: center;
   }
-
+.count_para .sub_para{
+  width: 40%;
+  text-align: center;
+}
 } 
+
 
 @media(max-width: 565px) and (min-width: 425px){
 
@@ -645,27 +652,32 @@ font-size: 20px;
     display: block;
   }
   .collection-car-item{
-    width: 260px;
+    width: 300px;
      height: 350px;
   }
   .collection-car-item img{
-    width: 260px;
+    width: 280px;
     height: auto;
-    margin-left: 70px;
+    margin-left: 60px;
   }
   .collection-car-items{
     width: 400px;
     height: 350px;
   }
   .collection-car-items img{
-    width: 260px;
+    width: 280px;
     height: auto;
-    margin-right: 70px;
+    margin-right: 60px;
   }
-  .number .count_para{
-    padding: 10px 20px 20px 110px;
+  .number{
+    margin-top: 10px;
+    
+  }
+  .number h3,.count_para{
+    padding: 0px 20px 0px 110px;
     width: 320px;
     font-size: 13px;
+    text-align: center;
   }
   .number .count_hline{
     font-size: 12px;
@@ -767,10 +779,14 @@ font-size: 20px;
     height: auto;
     margin-right: 70px;
   }
-  .number .count_para{
-    padding: 10px 20px 20px 110px;
+  .number{
+    margin-top: 30px;
+  }
+  .number h3,.count_para{
+    padding: 0px 20px 0px 90px;
     width: 320px;
     font-size: 13px;
+    text-align: center;
   }
   .number .count_hline{
     font-size: 12px;
@@ -872,10 +888,14 @@ font-size: 20px;
     height: auto;
     margin-right: 70px;
   }
-  .number .count_para{
-    padding: 10px 20px 20px 110px;
+  .number{
+    margin-top: 10px;
+  }
+  .number h3,.count_para{
+    padding: 10px 20px 0px 90px;
     width: 320px;
     font-size: 13px;
+    text-align: center;
   }
   .number .count_hline{
     font-size: 12px;
@@ -887,11 +907,506 @@ font-size: 20px;
 }
 
 
+/* car-info carousel */
+
+
+.carinfo-carousel{
+  margin: 50px;
+
+}
+
+.carousel-inner{
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin-top: 50px;
+}
+.carousel-inner .carousel-item img{
+ height: 380px;
+  
+}
+.carousel-control-prev, .carousel-control-next{
+  filter: invert(100%);
+}
+.disc-carinfo .img-fluid{
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* car details */
+
+
+.details {
+  margin: 20px 100px 70px 50px;
+  flex: 1;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px 0px 20px 5px;
+  color: #333;
+}
+.specs {
+
+  list-style: none;
+  padding: 0;
+}
+.specs li {
+      display: flex;
+      justify-content: space-between; /* Align key-value pairs */
+      margin: 15px 0; /* Space between list items */
+      font-size: 16px;
+      color: #555;
+      
+}
+
+.specs li span:first-child {
+  flex: 4;
+  font-weight: bold;
+
+}
+
+.specs li span:last-child {
+  flex: 1;
+  margin-left: -100px; 
+  text-align: left;
+  
+}
+
+/* small mobiles */
+@media (max-width:320px) and (min-width:0px){
+
+  .carinfo-carousel{
+    margin: 15px;
+  }
+.carousel-inner{
+  height: 200px;
+}
+  .carousel-item img{
+   height: 100%;
+   padding-bottom: 170px;
+  }
+
+  .details{
+    margin: 8px;
+  }
+  .details h2{
+    font-size: 23px;
+    margin: 10px 0px 5px 10px;
+  }
+
+}
+
+@media (max-width:425px) and (min-width:321px){
+  
+  .carinfo-carousel{
+    margin: 10px;
+  }
+
+  .carousel-item img{
+    height: 270px;
+  }
+  .details{
+    margin: 10px;
+  }
+  .details h2{
+    font-size: 25px;
+    margin: 10px 50px 5px 50px;
+  }
+}
+
+@media (max-width:768px) and (min-width:426px){
+
+  .carinfo-carousel{
+    margin:60px 40px 0px 40px;
+    width: 90%;
+  }
+  .carousel-item img{
+    height: 250px;
+  }
+  
+  .details{
+    margin: 110px 30px 0px 30px;
+    
+  }
+  .details h2{
+    font-size: 20px;
+    margin: -25px 50px 5px 50px;
+  }
+  .specs li{
+    font-size: 15px;
+  }
+  
+
+}
+
+@media (max-width:1024px) and (min-width:769px){
+ 
+  .carousel-item img{
+    height: 300px;
+  }
+
+  .details{
+    margin: 110px 30px 0px 30px;
+    
+  }
+  .details h2{
+    font-size: 30px;
+    margin: -15px 50px 5px 50px;
+  }
+}
+
+@media (max-width:1440px) and (min-width:1025px){
+  
+
+  .carousel-item img{
+    height: 450px;
+  }
+  .details{
+    margin: 80px 30px 0px 30px;
+    
+  }
+  .details h2{
+    font-size: 35px;
+    margin: -20px 50px 5px 120px;
+  }
+  .specs li{
+    font-size: 25px;
+  }
+
+}
+
+
+/* car description */
+
+.disc-carinfo{
+  margin-top: 80px;
+}
+.disc-details{
+  text-align: center;
+  width: 100%;
+}
+
+.disc-carinfo img{
+  width: 80%;
+  height: 380px;
+  border-radius: 20px;
+}
+.disc-carinfo h5,.disc-para{
+width: 97%;
+height: auto;
+text-align: center;
+margin-top: 20px;
+}
+.disc-carinfo h5{
+  font-weight: bold;
+}
+.disc-carinfo .custom-gap{
+  margin-bottom: 60px;
+}
+
+
+ @media (max-width:320px) and (min-width:0px){
+  .disc-details h3{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .disc-details p{
+    font-size: 15px;
+  }
+  .disc-carinfo{
+    margin-top: 30px;
+  }
+  .disc-carinfo img{
+    width: 100%;
+    height: 200px;
+  }
+  .disc-carinfo h5{
+    font-size: 18px;
+  }
+  .disc-carinfo p{
+    font-size: 15px; 
+  }
+  .disc-carinfo .custom-gap{
+    margin-bottom: 10px;
+  }
+}
+
+
+ @media (max-width:425px) and (min-width:321px){
+  .disc-details h3{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .disc-details p{
+    font-size: 15px;
+  }
+  .disc-carinfo{
+    margin-top: 30px;
+  }
+  .disc-carinfo img{
+    width: 90%;
+    height: 250px;
+  }
+  .disc-carinfo h5{
+    font-size: 18px;
+  }
+  .disc-carinfo p{
+    font-size: 15px; 
+  }
+  .disc-carinfo .custom-gap{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:768px) and (min-width:426px){
+  .description{
+    margin-top: 50px;
+  }
+  .description p{
+    font-size: 14px;
+  }
+  .description h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .disc-carinfo{
+    margin-top: 30px;
+  }
+  .disc-carinfo img{
+    height: 230px;
+  }
+  .disc-carinfo h5{
+    font-size: 16px;
+  }
+  .disc-carinfo .disc-para{
+    font-size: 14px;
+  }
+}
+
+/* terms and conditions */
+
+.terms-and-conditions{
+ margin-bottom: 50px;
+}
 
 
 
+/* contactus page */
+
+.contact{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/dark-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.contact h1{
+  margin-top: 50px;
+  font-size: 48px;
+  font-weight: bold;
+  color: aquamarine;
+}
+.contact p{
+  font-size: 24px;
+  width: 708px;
+  text-align: center;
+  color: yellow;
+}
+.car-select{
+  background-color: #efefef;
+  width: 90vw;
+  height: 153px;
+  border-radius: 32px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.car-select-item{
+  display: flex;
+  flex-direction: column;
+}
+.car-select-item label{
+  font-size: 24px;
+}
+.car-select-input{
+  width: 276px;
+  height: 45px;
+  border-radius: 32px;
+  padding: 10px;
+  font-size: 16px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px 50px;
+}
+.contact-form input{
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  background-color: transparent;
+  outline: none;
+}
+.contact-form button{
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+}
+.contact-form button:hover{
+  color: white;
+  background-color: var(--black);
+}
+
+/* media query */
+
+/* laptop */
+
+@media (max-width: 768px) and (min-width: 426px){
+ 
+
+/* contact page  */
+
+.contact h1{
+  font-size: 40px;
+}
+.contact p{
+  width: 567px;
+  text-align: center;
+}
+.car-select{
+  width: 95vw;
+  gap: 30px;
+}
+.car-select-input{
+  width: 190px;
+  height: 45px;
+}
+.car-select label{
+  font-size: 20px;
+  text-align: center;
+}
+.car-select select,.car-select-input{
+  width: 210px;
+}
+
+}
+
+/* phone  */
+@media (min-width: 374px) and (max-width: 475px){
+
+  
+    /* contact  */
+    .contact{
+      padding: 5px 10px;
+    }
+    .contact h2{
+        text-align: center;
+        margin-left: -2px;
+    }
+    .contact h1{
+      font-size: 24px;
+      text-align: center;
+    }
+    .contact p{
+      width: 100%;
+      font-size: 15px;
+    }
+    form{
+      width: 100%;
+      align-items: center;
+    }
+    .car-select{
+      width: 100%;
+      height: 290px;
+      flex-direction: column;
+    }
+    .contact-form{
+        margin-left: 0px;
+      width: 100%;
+    }
+    .contact-form input{
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    .contact-form .btn-2{
+      width: 100%;
+    }
+    .car-select-item label{
+      font-size: 15px;
+      padding-left: 10px;
+    }
+    .car-select-item .car-select-input{
+      height: 45px;
+      width: 250px;
+    }
+  
+
+    
+}
+
+@media(max-width: 374px) and (min-width: 0px){
 
 
+  /* contact  */
+  .contact{
+    padding: 5px 10px;
+  }
+  .contact h2{
+    text-align: center;
+    margin-left: -5px;
+  }
+  .contact h1{
+    font-size: 24 px;
+    text-align: center;
+  }
+  .contact p{
+    width: 100%;
+    font-size: 15px;
+  }
+  form{
+    width: 100%;
+    align-items: center;
+  }
+  .car-select{
+    width: 100%;
+    height: 290px;
+    flex-direction: column;
+  }
+  .contact-form{
+       width: 100%;
+    margin-left: 0px;
+  }
+  .contact-form input{
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .contact-form .btn-2{
+    width: 100%;
+  }
+  .car-select-item label{
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .car-select-item .car-select-input{
+    height: 45px;
+    width: 250px;
+  }
 
 
-
+  
+}
