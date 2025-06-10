@@ -402,7 +402,11 @@ p {
 .rent-column:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.384);
 }
-
+@media(min-width:320px) and (max-width:425px){
+    .rent-column img{
+        width: 100%;
+    }
+}
 @media(max-width: 1100px) {
     .row {
         flex-direction: column;
@@ -551,7 +555,7 @@ section .card .image img {
 .card .button {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     margin-top: 20px;
 }
 
@@ -560,7 +564,7 @@ section .card .image img {
     outline: none;
     border: none;
     color: var(--bs-white);
-    padding: 8px 22px;
+    padding: 8px 20px;
     border-radius: 20px;
     font-size: 14px;
     transition: all 0.3s ease;
