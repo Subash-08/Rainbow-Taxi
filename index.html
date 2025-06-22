@@ -46,6 +46,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            .image img{
+                width:200px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .scrolling-images {
+      width: 100%;
+      overflow: hidden;
+    }
+
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .card {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scrolling-images {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.scroll-track img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+    @media (max-width: 600px) {
+      .scroll-track img {
+        height: 160px;
+      }
+
+      .card-content h3 {
+        font-size: 1rem;
+      }
+
+      .card-content p {
+        font-size: 0.9rem;
+      }
+    }
+  
+        </style>
 </head>
 
 <body>
@@ -384,7 +474,106 @@
         <h1>Our Extensive Car Rental <br><span class="text-primary">Service in Salem</span></h1>
         ---------- <i class="fa-solid fa-car fa-beat-fade" style="color: #010005;"></i> ----------
         <br><br>
-        <div class="row">
+        <div class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="scrolling-images">
+        <div class="scroll-track carousel">
+          <img src="img/cars/11.png" alt="">
+          <img src="img/cars/12.png" alt="">
+          <img src="img/cars/13.png" alt="">
+          
+        </div>
+      </div>
+      <div class="card-content">
+         <h3>Luxury Car For Rent</h3>
+                <p>Rainbow Call Taxi likely offers luxury car rentals as part of their premium services, catering to
+                    customers who want a more comfortable and upscale travel experience. Renting a luxury car could be
+                    ideal for special occasions, business trips, or a relaxed sightseeing tour.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="scrolling-images">
+        <div class="scroll-track carousel">
+          <img src="img/cars/2.png" alt="">
+          <img src="img/cars/3.png" alt="">
+          <img src="img/cars/4.png" alt="">
+         
+         
+        </div>
+      </div>
+      <div class="card-content">
+       <h3>Wedding Car Rent</h3>
+                <p>Rainbow Call Taxi likely offers wedding car rentals as part of their special event services. Renting
+                    a wedding car can add an extra touch of elegance and comfort to your big day. Some services also
+                    offer a post-wedding ride, so you can leave the wedding venue in style, whether you’re heading off
+                    to your honeymoon or another event.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="scrolling-images">
+        <div class="scroll-track carousel">
+          <img src="img/cars/1.png" alt="">
+          <img src="img/cars/5.png" alt="">
+          <img src="img/cars/6.png" alt="">
+         
+          
+        </div>
+      </div>
+      <div class="card-content">
+       <h3>Monthly Car Rent</h3>
+                <p>Rainbow Call Taxi may offer monthly car rental services,
+                    who need a vehicle for an extended period, whether for personal use, business trips, or regular
+                    commuting. Monthly car rentals typically include a variety of options and benefits. Typically, fuel
+                    and maintenance costs are the responsibility of the renter, but some services may offer packages
+                    that include these costs.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="scrolling-images">
+        <div class="scroll-track carousel">
+          <img src="img/cars/8.png" alt="">
+          <img src="img/cars/9.png" alt="">
+          <img src="img/cars/10.png" alt="">
+          
+         
+        </div>
+      </div>
+      <div class="card-content">
+          <h3>Employee Car Rent</h3>
+                <p>Rainbow Call Taxi may offer employee car rental services, which could be ideal for businesses or
+                    organizations looking to provide transportation options for their staff members. Employee car
+                    rentals typically involve a corporate arrangement where businesses can rent vehicles on behalf of
+                    their employees for regular commuting.</p>
+      </div>
+    </div>
+
+     <div class="card">
+      <div class="scrolling-images">
+        <div class="scroll-track carousel">
+          <img src="img/cars/19.png" alt="">
+          <img src="img/cars/19.png" alt="">
+          <img src="img/cars/19.png" alt="">
+                   
+        </div>
+      </div>
+      <div class="card-content">
+        <h3>Tample Tour Car Rent</h3>
+                <p>Rainbow Call Taxi may offer temple tour packages or temple tour car rentals, which are ideal for
+                    those looking to visit religious or spiritual sites in and around areas like Valparai or other
+                    regions. These services typically cater to pilgrims, tourists, or anyone interested in exploring
+                    multiple temples in a day or over a set period.</p>
+      </div>
+    </div>
+  </div>
+        <!-- <div class="row">
             <div class="rent-column">
                 <img src="img/rolls.jpg" alt="">
                 <h3>Luxury Car For Rent</h3>
@@ -815,7 +1004,33 @@
             }
         });
 
-            </script>
+    </script>
+    <script>
+  document.querySelectorAll('.carousel').forEach((track) => {
+    const images = track.children;
+    const firstClone = images[0].cloneNode(true);
+    track.appendChild(firstClone);
+
+    let index = 0;
+    const total = track.children.length;
+
+    setInterval(() => {
+      index++;
+      track.style.transition = "transform 0.5s ease-in-out";
+      track.style.transform = `translateX(-${index * 100}%)`;
+
+      if (index === total - 1) {
+        setTimeout(() => {
+          track.style.transition = "none";
+          track.style.transform = "translateX(0)";
+          index = 0;
+        }, 500);
+      }
+    }, 3000);
+  });
+</script>
+
+
 
 
 </body>
